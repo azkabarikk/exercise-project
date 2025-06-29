@@ -1,55 +1,69 @@
-# exercise-project
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contoh Layout dengan Table</title>
 </head>
 <body>
 
 <!-- Section 1: Menu -->
-<div id="menu">
-  <a href="#profil">Profil</a>
-  <a href="#biodata">Biodata</a>
-  <a href="#portfolio">Portofolio</a>
-  <a href="#kontak">Kontak</a>
-</div>
-
-<!-- Section 2: Judul kiri dan gambar kanan -->
-<table id="header-table">
-  <tr>
-    <td id="header-left">Profil Saya</td>
-    <td id="header-right" align="right">
-      <img src="https://via.placeholder.com/150" alt="Foto Profil" />
-    </td>
-  </tr>
+<table border="1" width="100%">
+    <tr>
+        <td><a href="#section2">Header</a></td>
+        <td><a href="#section3">Biodata</a></td>
+        <td><a href="#section4">Portfolio</a></td>
+    </tr>
 </table>
 
-<!-- Section 3: Biodata 6 box -->
-<table id="biodata-table" summary="Biodata Diri">
-  <tr>
-    <td>Nama<span class="label">John Doe</span></td>
-    <td>Tempat, Tgl Lahir<span class="label">Jakarta, 1 Januari 1990</span></td>
-    <td>Jenis Kelamin<span class="label">Laki-laki</span></td>
-  </tr>
-  <tr>
-    <td>Pendidikan<span class="label">S1 Informatika</span></td>
-    <td>Alamat<span class="label">Jl. Sudirman No. 10</span></td>
-    <td>Email<span class="label">john.doe@email.com</span></td>
-  </tr>
+<!-- Section 2: Judul di kiri dan gambar -->
+<table border="1" width="100%" id="section2">
+    <tr>
+        <td width="50%" valign="middle">
+            <h2>Selamat Datang di Web Saya</h2>
+            <p>Ini  adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini</p>
+            <button>Pelajari Lebih Lanjut</button>
+        </td>
+        <td width="50%">
+            <img src="https://via.placeholder.com/300" alt="Gambar Contoh" width="600px" height="400px">
+        </td>
+    </tr>
+</table>
+
+<!-- Section 3: Biodata dengan 6 box -->
+<table border="1" width="100%" id="section3" cellpadding="10" cellspacing="0">
+     <tr align="center">
+        <ul align="center">
+          <h2>About Me</h2>
+          <p>A brief introduction about my self!</p>
+        </ul>
+     </tr>  
+     <tr align="center">
+        <td><b>Full Name</b></td>
+        <td><b>Education</b></td>
+        <td><b>Pekerjaan</b></td>
+    </tr>
+    <tr align="center">
+        <td><b>Contact</b></td>
+        <td><b>Hobi</b></td>
+        <td><b>Alamat</b></td>
+    </tr>
 </table>
 
 <!-- Section 4: Portfolio -->
-<div id="portfolio">
-  <h2>Portofolio</h2>
-  <table id="portfolio-table" summary="Daftar Portofolio">
+<table border="1" width="100%" id="section4" cellpadding="10" cellspacing="0">
+       <tr align="center">
+        <ul align="center">
+          <h2>Portfolio</h2>
+        </ul>
+     </tr>  
     <tr>
-      <td><strong>Website Company</strong><br />Situs web perusahaan menggunakan HTML, CSS, dan JS.</td>
-      <td><strong>Aplikasi Mobile</strong><br />Pengembangan aplikasi Android untuk e-commerce.</td>
-      <td><strong>Proyek Data Science</strong><br />Analisis data pelanggan untuk pemasaran.</td>
+        <td><b>Project 1</b><br>Deskripsi project 1</td>
+        <td><b>Project 2</b><br>Deskripsi project 2</td>
     </tr>
-  </table>
-</div>
+    <tr>
+        <td><b>Project 3</b><br>Deskripsi project 3</td>
+        <td><b>Project 4</b><br>Deskripsi project 4</td>
+    </tr>
+</table>
 
 </body>
 </html>
